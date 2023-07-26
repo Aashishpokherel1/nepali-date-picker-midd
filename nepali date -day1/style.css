@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wrapper {
+  margin-top: 15px;
+  width: 250px;
+  background: #fffdfd;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper header {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px 3px;
+  justify-content: space-between;
+  background-color: #761616;
+  color: #ffffff;
+  
+}
+
+header .icons {
+  display: flex;
+}
+
+header .icons span {
+  height: 26px;
+  width: 26px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #ffffff;
+  text-align: center;
+  line-height: 26px;
+  font-size: 1.3rem;
+  user-select: none;
+  border-radius: 50%;
+  
+}
+
+
+header .icons span:last-child {
+  margin-right: -4px;
+}
+
+header .icons span:hover {
+  background: #f2f2f2;
+  color: #761616;
+}
+
+header .current-date {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.calendar {
+  padding: 5px;
+  
+}
+
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+.weeks {
+  font-family: 'Poppins', sans-serif;
+}
+
+.calendar .nepalidates {
+  margin-bottom: 8px;
+  
+}
+
+.calendar li {
+  color: #010101;
+  width: calc(100% / 7);
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar .weeks li {
+  font-weight: 300;
+  cursor: default;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.calendar .nepalidates li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 10px;
+  transition: background-color 0.3s ease; /* Add a smooth transition for the hover effect */
+}
+
+.nepalidates li.inactive {
+  color: #aaa;
+}
+
+.nepalidates li.active {
+  color: #761616;
+}
+
+.nepalidates li span:first-child {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.nepalidates li span:last-child {
+  font-size: 0.7rem;
+  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nepalidates li:hover {
+  background-color: #76161671; /* Add some transparency to the background color for a smooth hover effect */
+
+}
+
+.current-date {
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+  display: none;
+}
+
+/* Show the calendar wrapper when the "show" class is applied */
+.wrapper.show {
+  display: block;
+}
+#datepicker {
+  -webkit-user-select: none; /* Disable text selection on webkit browsers */
+  -moz-user-select: none; /* Disable text selection on Mozilla Firefox */
+  -ms-user-select: none; /* Disable text selection on Microsoft Edge */
+  user-select: none; /* Disable text selection on other browsers */
+  cursor: pointer; /* Change cursor to a pointer on hover */
+}

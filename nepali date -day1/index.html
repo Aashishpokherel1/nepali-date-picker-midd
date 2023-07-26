@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Dynamic Calendar JavaScript | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Font Link for Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+  <!-- Nepali Font Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@600&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Input field for the date picker -->
+  <div class="datepicker-container">
+    <input type="text" id="datepicker" placeholder="Click to select a date" readonly>
+    <!-- Calendar -->
+    <div class="wrapper">
+      <header>
+        <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>आइत</li>
+          <li>सोम</li>
+          <li>मंगल</li>
+          <li>बुध</li>
+          <li>बिहि</li>
+          <li>शुक्र</li>
+          <li>शनि</li>
+        </ul>
+        <ul class="nepalidates"></ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
